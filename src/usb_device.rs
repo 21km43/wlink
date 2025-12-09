@@ -243,11 +243,6 @@ pub mod ch375_driver {
             return Ok(lib);
         }
 
-        // Fallback to CH375DLL.dll if WCHLinkDLL.dll is not available
-        if let Some(ref lib) = libs.ch375_dll {
-            return Ok(lib);
-        }
-
         Err(Error::Custom("No suitable DLL found".to_string()))
     }
 
