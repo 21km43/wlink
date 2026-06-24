@@ -38,3 +38,13 @@ clap-verbosity-flag = "3"
 
 [target.'cfg(all(target_os = "windows", target_arch = "x86"))'.dependencies]
 libloading = "0.9"
+
+[target.'cfg(all(target_os = "windows"))'.dependencies]
+windows = { version = "0.62.2", features = [
+    "Win32_Devices_DeviceAndDriverInstallation",
+    "Win32_Devices_Usb",
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_IO",
+] }
