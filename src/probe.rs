@@ -194,7 +194,7 @@ impl WchLink {
                 // Detect if it is in DAP or IAP mode
                 if crate::usb_device::open(VENDOR_ID_DAP, PRODUCT_ID_DAP, selector).is_ok() {
                     return Err(Error::ProbeModeNotSupported);
-                } else if crate::usb_device::open(VENDOR_ID_IAP, PRODUCT_ID_IAP, nth).is_ok() {
+                } else if crate::usb_device::open(VENDOR_ID_IAP, PRODUCT_ID_IAP, selector).is_ok() {
                     return Err(Error::ProbeModeNotSupported);
                 } else {
                     return Err(e);
