@@ -26,6 +26,8 @@
 - [x] Read/write chip register - very handy for debugging
 - [x] Code-Protect & Code-Unprotect for supported chips
 - [x] Enable or Disable 3.3V, 5V output
+- [x] Switch IAP mode
+- [x] Upgrade WCH-Link/E firmware
 - [x] [SDI print](https://www.cnblogs.com/liaigu/p/17628184.html) support, requires 2.10+ firmware
 - [x] [Serial port watching](https://github.com/ch32-rs/wlink/pull/36) for a smooth development experience
 - [x] Windows native driver support (WCHLinkDrv), no WinUSB/libusb driver needed; works on x86, x64 and ARM64 (nightly builds currently ship x86/x64 Windows binaries, so build from source on ARM64)
